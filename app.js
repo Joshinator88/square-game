@@ -1,8 +1,3 @@
-// const canvas = document.querySelector('canvas');
-// const ctx = canvas.getContext('2d');
-// canvas.width = width = window.innerWidth;
-// canvas.height =  height = window.innerHeight;
-
 const player = document.getElementById('player');
 const stage = document.getElementById('stage');
 let playerInfo = player.getBoundingClientRect();
@@ -77,57 +72,3 @@ function loop() {
 }
 loop();
 
-
-// class EvilBox {
-//     constructor(x, y, sizeX, sizeY, speed) {
-//         this.x = x;
-//         this.y = y;
-//         this.sizeX = sizeX;
-//         this.sizeY = sizeY;
-//         this.speed = speed;
-//     }
-//     draw() {
-//         // if (!exists) {
-//             ctx.fillStyle = "#00ff00";
-//             ctx.fillRect(this.x, this.y, this.sizeX, this.sizeY);
-//             // exists = true;
-//         // }
-//     }
-//     update() {
-//         this.x -= this.speed;
-        
-//         if ((this.x + this.sizeX) < 0) {
-//             this.x = random(width, (width + 500)); 
-//         }
-//     }
-//     collisionDetect() {
-//         if (this.x >= (width/10 - this.sizeX) && this.x < width/10 + 50) {
-//             if(this.y <= (player.style.top + 50)) {
-//                 this.speed = 0;
-//                 const gameOver = document.createElement('div').setAttribute('id', 'gameOver');
-//                 const para = document.createElement('h1').setAttribute('id', 'gameOverMessage');
-//                 para.textContent = 'Game Over!'
-//                 document.body.appendChild(gameOver);
-//                 gameOver.appendChild(para);
-//             }
-//         }
-//     }
-// }
-
-// const evilBox = new EvilBox(
-//     random(width, (width + 500)),
-//     height/2,
-//     50,
-//     50,
-//     10)
-
-//     function loop() {
-//         ctx.fillStyle = 'black';
-//         ctx.fillRect(0, 0, width, height);
-
-//         evilBox.draw();
-//         evilBox.update();
-
-//         requestAnimationFrame(loop);
-//     }
-//     loop()
